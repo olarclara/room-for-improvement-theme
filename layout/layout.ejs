@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="<%= config.language %>">
+  <%- partial('_partials/head') %>
+  <body>
+    <div class="content">
+      <% if (!is_post() && page.title !== 'talks' && page.title !== 'author') { %>
+        <%- partial('_partials/header') %>
+      <% } %>
+      <%- body %>
+    </div>
+  </body>
+</html>

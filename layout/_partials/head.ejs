@@ -1,0 +1,28 @@
+<head lang="en">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <% if (theme.customize.favicon) { %>
+    <% if (theme.customize.favicon.desktop) { %>
+      <link rel="shortcut icon" href="<%= url_for(theme.customize.favicon.desktop.url) %>">
+    <% } %>
+    <% if (theme.customize.favicon.android) { %>
+      <link rel="icon" type="image/png" href="<%= url_for(theme.customize.favicon.android.url) %>" sizes="192x192">
+    <% } %>
+  <% } %>
+
+  <title><%= page.title ? page.title : config.title %></title>
+  <meta name="description" content="<%= config.description %>">
+  <meta name="theme-color" content="#13293D">
+  <meta name="mobile-web-app-capable" content="yes">  
+  
+  <meta name="og:title" content="<%= page.title ? page.title : config.title %>">
+  <meta name="og:url" content="<%= config.description %>">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@<%= theme.customize.twitter_handle %>">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" async>
+  <%- css('css/style') %>
+</head>
