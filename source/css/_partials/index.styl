@@ -1,0 +1,26 @@
+ul
+  list-style: none
+  padding: 0
+  margin: 0  
+
+#about
+  ul
+    display: inline-block
+    li
+      display: inline-block
+    li:after
+      content: ", "
+    li:last-child:after
+      content: ""
+    li:nth-last-child(2):after
+      content: " and "
+
+#posts
+  margin-top: 3em
+  h1
+    a
+      color: $color-text
+      text-decoration: none
+  ul
+    -webkit-padding-start: 0
+    list-style: none
