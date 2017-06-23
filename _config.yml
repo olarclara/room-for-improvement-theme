@@ -1,0 +1,21 @@
+nav:
+  Author: /author/
+  Talks: /talks/
+
+customize:
+    favicon: 
+      # eg. generate with http://realfavicongenerator.net/
+      desktop:
+        url: /images/favicon.ico
+      android:
+        url: /images/favicon-192x192.png
+    social_links:
+        github: 
+        twitter: 
+        linkedin: 
+    twitter_handle: 
+
+projects:
+  lorem_ipsum: 
+    url: 
+    description: 
