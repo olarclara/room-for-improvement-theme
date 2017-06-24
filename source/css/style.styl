@@ -11,6 +11,7 @@ body
   display: flex
   flex-direction: column
   align-items: center
+  position: relative
 
 a, a:visited
   color: $color-link
@@ -18,13 +19,14 @@ a, a:visited
 .content
   padding: 1.5em
   width: 60%
-
+  
 @media screen and (max-width: 64em)
   .content
     width: 90%
     
 @import "_partials/header"
 @import "_partials/index"
+@import "_partials/footer"
 
 //Code
 .highlight 
