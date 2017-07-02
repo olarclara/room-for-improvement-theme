@@ -2,19 +2,29 @@ nav:
   Author: /author/
   Talks: /talks/
 
-customize:
-    favicon: 
-      # eg. generate with http://realfavicongenerator.net/
-      desktop:
-        url: /images/favicon.ico
-      android:
-        url: /images/favicon-192x192.png
+custom:
+  license: CC BY-SA
+  twitter_handle: 
+  favicon: 
+    # eg. generate with http://realfavicongenerator.net/
+    desktop:
+      url: /images/favicon.ico
+    android:
+      url: /images/favicon-192x192.png
     social_links:
-        github: 
-        twitter: 
-        linkedin: 
+      github: 
+      twitter: 
+      linkedin: 
+
+social:
+  twitter:
+  github: 
+  linkedin:   
 
 projects:
-  lorem_ipsum: 
+  project:
+    url: 
+    description: 
+  bechdel-project:
     url: 
     description: 
