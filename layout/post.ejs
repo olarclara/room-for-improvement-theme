@@ -1,11 +1,9 @@
-<article id="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <a href='/'>< Home</a>
-
-  <div>
-    <h1><%- page.title %></h1> 
-    <% if (page.title !== 'author' && page.title !== 'talks') { %>
-      <%= date(page.date, config.date_format) %>
-    <% } %>
+<section id="post">
+  <h1><%- page.title %></h1>
+  <% if (page.title !== 'Author' && page.title !== 'Talks') { %>
+    <small>(<%= date(page.date, config.date_format) %>)</small>
+  <% } %>
+  <article>
     <%- page.content %>
-  </div>
-</article>
+  </article>
+</section>

@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  
+  <title><%= page.title ? page.title : config.title %></title>
+  <meta name="description" content="<%= config.description %>">
+
+  <% if (theme.custom.favicon) { %>
+    <% if (theme.custom.favicon.desktop) { %>
+      <link rel="shortcut icon" href="<%= url_for(theme.custom.favicon.desktop.url) %>">
+    <% } %>
+    <% if (theme.custom.favicon.android) { %>
+      <link rel="icon" type="image/png" href="<%= url_for(theme.custom.favicon.android.url) %>" sizes="192x192">
+    <% } %>
+  <% } %>
+  
+  <!-- twitter card metadata -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@<%= theme.social.twitter_handle %>">
+  <meta name="twitter:title" content="<%= page.title ? page.title : config.title %>">
+  <meta name="twitter:description" content="<%= config.description %>">
+
+  <!-- open graph metadata -->
+  <meta name="og:title" content="<%= page.title ? page.title : config.title %>">
+  <meta name="og:description" content="<% config.description %>">
+</head>

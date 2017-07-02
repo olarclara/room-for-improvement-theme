@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="<%= config.language %>">
-  <%- partial('_partials/head') %>
+  <%- partial('_partial/head', {}, {cache:true}) %>
   <body>
     <div class="content">
-      <% if (!is_post() && page.title !== 'talks' && page.title !== 'author') { %>
-        <%- partial('_partials/header') %>
+      <% if (!is_post() && page.title !== 'Talks' && page.title !== 'Author') { %>
+        <%- partial('_partial/header', {}, {cache:true}) %>
       <% } %>
       <%- body %>
+      <%- partial('_partial/footer', {}, {cache:true}) %>
     </div>
-    <%- partial('_partials/footer') %>
+    <%- css('css/style') %>
   </body>
 </html>
