@@ -1,0 +1,29 @@
+#header
+  padding-top: 1.5em
+  #title
+    text-decoration: none
+    h1
+      color: $color-text
+      margin: 0
+  ul, li
+    display: inline-block
+  #nav
+    li
+      margin-right: 15px
+      border-right: 1px dotted $color-accent
+      a
+        margin-right: 15px
+      &:last-child
+        border-right: 0
+        margin-right: 0
+  #social
+    p, ul
+      display: inline
+    ul
+      li
+        &:after
+          content: ", "
+        &:last-child:after
+          content: "."
+        &:nth-last-child(2):after
+          content: " and "     
